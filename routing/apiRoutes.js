@@ -41,7 +41,7 @@ function calculateDifference(scoreTotal) {
 function findFriend(newFriend, array) {
 
 	var scoreTotal = calculateNewFriendScore(newFriend);
-	var differenceArr = calculateDifferenceWithExistingFriends(newFriendScoreTotal);
+	var differenceArr = calculateDifference(newFriendScoreTotal);
 	console.log(differenceArr);
 	var min = Math.min.apply(Math, differenceArr);
 	var index = differenceArr.indexOf(min);

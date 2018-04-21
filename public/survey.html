@@ -228,8 +228,8 @@
 
 			$.post("/api/friends", newFriend)
 			.then(function(newBestFriend) {
-				$("#friendName").append(newBestFriend.name);
-				$("#friendPic").attr("src", newBestFriend.photo);
+				$("#friendName").append(newFriend.name);
+				$("#friendPic").attr("src", newFriend.photo);
 			});
 		});
 	</script>
