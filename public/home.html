@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find a Friend</title>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+ 
+  
+
+</head>
+<body>
+
+  <div class="container">
+    <div>
+      <div class="text-center">
+        <h1>Find a Friend <i></i></h1>
+      </div>
+      <hr>
+      <div>
+        <h3>Find a friend!</h3>
+        <br>
+      </div>
+
+      
+      <div class="row">
+        <div class="text-center">
+          <a href="survey"><button class="btn btn-primary btn-lg"><i></i> Take Survey</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <a href="/api/friends" id="friendList">API Friends List</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    $("#friendList").on("click", function() {
+      event.preventDefault();
+      location.href = "/api/friends";
+    });
+  </script>
+
+</body>
